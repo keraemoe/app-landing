@@ -62,16 +62,16 @@ export default function Header() {
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
-                                <a href="#" className="flex py-3 text-sm font-semibold leading-6 text-gray-900">
+                                <a href="#" onClick={() => setMobileMenuOpen(false)} className="flex py-3 text-sm font-semibold leading-6 text-gray-900">
                                     Home
                                 </a>
-                                <a href="#app" className="flex py-3 text-sm font-semibold leading-6 text-gray-900">
+                                <a href="#app" onClick={() => setMobileMenuOpen(false)} className="flex py-3 text-sm font-semibold leading-6 text-gray-900">
                                     The App
                                 </a>
-                                <a href="#features" className="flex py-3 text-sm font-semibold leading-6 text-gray-900">
+                                <a href="#features" onClick={() => setMobileMenuOpen(false)} className="flex py-3 text-sm font-semibold leading-6 text-gray-900">
                                     Features
                                 </a>
-                                <a href="#contact" className="flex py-3 text-sm font-semibold leading-6 text-gray-900">
+                                <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="flex py-3 text-sm font-semibold leading-6 text-gray-900">
                                     Contact
                                 </a>
                             </div>
