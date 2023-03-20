@@ -19,7 +19,7 @@ export default function Header() {
                     transition={{ duration: 0.4 }}
                     variants={{
                         visible: { opacity: 1, scale: 1, x: 0 },
-                        hidden: { opacity: 1, scale: -1 },
+                        hidden: { opacity: 1, scale: 0 },
                     }}
                     className="flex lg:flex-1">
                     <a href="#" className="-m-1.5 p-1.5">
