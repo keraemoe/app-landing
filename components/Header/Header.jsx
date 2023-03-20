@@ -4,7 +4,8 @@ import {
     Bars3Icon,
     XMarkIcon,
 } from '@heroicons/react/24/outline'
-
+import AnimatedTextCharacterParagraph from '../AnimatedText/AnimatedParagraph'
+import { motion } from "framer-motion";
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -12,12 +13,20 @@ export default function Header() {
     return (
         <header className="fixed right-0 left-0 m-auto rounded-bl-3xl rounded-br-3xl max-w-full z-10 top-0 backdrop-blur-2xl shadow-lg ">
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-                <div className="flex lg:flex-1">
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    transition={{ duration: 0.4 }}
+                    variants={{
+                        visible: { opacity: 1, scale: 1, x: 0 },
+                        hidden: { opacity: 1, scale: -1 },
+                    }}
+                    className="flex lg:flex-1">
                     <a href="#" className="-m-1.5 p-1.5">
                         <img className="h-8 w-auto" src="/icon.png" alt="" />
                         <span className="sr-only">Your Company</span>
                     </a>
-                </div>
+                </motion.div>
                 <div className="flex lg:hidden">
                     <button
                         type="button"
@@ -30,16 +39,16 @@ export default function Header() {
                 </div>
                 <Popover.Group className="hidden lg:flex lg:gap-x-12">
                     <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                        Home
+                        <AnimatedTextCharacterParagraph text={"Home"} />
                     </a>
                     <a href="#app" className="text-sm font-semibold leading-6 text-gray-900">
-                        The App
+                        <AnimatedTextCharacterParagraph text={"The App"} />
                     </a>
                     <a href="#features" className="text-sm font-semibold leading-6 text-gray-900">
-                        Features
+                        <AnimatedTextCharacterParagraph text={"Features"} />
                     </a>
                     <a href="#contact" className="text-sm font-semibold leading-6 text-gray-900">
-                        Contact
+                        <AnimatedTextCharacterParagraph text={"Contact"} />
                     </a>
                 </Popover.Group>
             </nav>
