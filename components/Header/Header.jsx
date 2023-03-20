@@ -1,24 +1,10 @@
-﻿import { Fragment, useState } from 'react'
-import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
+﻿import { useState } from 'react'
+import { Dialog, Popover } from '@headlessui/react'
 import {
     Bars3Icon,
     XMarkIcon,
-    ShoppingBagIcon
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
-const products = [
-    { name: 'Products', description: 'Slave my products!', href: '/products', icon: ShoppingBagIcon },
-
-]
-const callsToAction = [
-    { name: 'Watch slaves', href: '#', icon: PlayCircleIcon },
-    { name: 'Contact sales', href: '/contacts', icon: PhoneIcon },
-]
-
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-}
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -76,39 +62,17 @@ export default function Header() {
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
-                                <a href="/" className="flex text-sm font-semibold leading-6 text-gray-900">
+                                <a href="#" className="flex py-3 text-sm font-semibold leading-6 text-gray-900">
                                     Home
                                 </a>
-                                <Disclosure as="div" className="-mx-3">
-                                    {({ open }) => (
-                                        <>
-                                            <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50">
-                                                Product
-                                                <ChevronDownIcon
-                                                    className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
-                                                    aria-hidden="true"
-                                                />
-                                            </Disclosure.Button>
-                                            <Disclosure.Panel className="mt-2 space-y-2">
-                                                {[...products, ...callsToAction].map((item) => (
-                                                    <Disclosure.Button
-                                                        key={item.name}
-                                                        as="a"
-                                                        href={item.href}
-                                                        className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                                    >
-                                                        {item.name}
-                                                    </Disclosure.Button>
-                                                ))}
-                                            </Disclosure.Panel>
-                                        </>
-                                    )}
-                                </Disclosure>
-                                <a href="/features" className="flex py-3 text-sm font-semibold leading-6 text-gray-900">
+                                <a href="#app" className="flex py-3 text-sm font-semibold leading-6 text-gray-900">
+                                    The App
+                                </a>
+                                <a href="#features" className="flex py-3 text-sm font-semibold leading-6 text-gray-900">
                                     Features
                                 </a>
-                                <a href="/about" className="flex text-sm font-semibold leading-6 text-gray-900">
-                                    About Us
+                                <a href="#contact" className="flex py-3 text-sm font-semibold leading-6 text-gray-900">
+                                    Contact
                                 </a>
                             </div>
                         </div>

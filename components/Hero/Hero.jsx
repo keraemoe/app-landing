@@ -19,7 +19,7 @@ const Hero = () => {
                             <img className="w-5/6 mx-auto lg:mr-0 slide-in-bottom" src="devices.svg" />
                         </div>
                         <div className="w-full pt-16 pb-6 text-sm text-center md:text-left fade-in">
-                            <a className="text-gray-500 no-underline hover:no-underline" href="#">&copy; App 2019</a>
+                            <a className="text-gray-500 no-underline hover:no-underline" href="#">&copy; App 2025</a>
                         </div>
                     </div>
                 </div>
