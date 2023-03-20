@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: o;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
