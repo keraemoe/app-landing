@@ -42,8 +42,11 @@ const Hero = () => {
                                     src="Play Store.svg" className="h-12 bounce-top-icons" />
                             </div>
                         </div>
-                        <div className="w-full xl:w-3/5 py-6 overflow-y-hidden">
-                            <motion.img
+                        <div className="w-full xl:w-3/5 py-6">
+                            <motion.video
+                                autoPlay={true}
+                                loop={true}
+                                preload={"auto"}
                                 initial="hidden"
                                 whileInView="visible"
                                 transition={{ duration: 0.7 }}
@@ -51,8 +54,10 @@ const Hero = () => {
                                     visible: { opacity: 1, scale: 1, x: 0 },
                                     hidden: { opacity: 0, scale: 0 },
                                 }}
-                                className="w-5/6 mx-auto lg:mr-0 slide-in-bottom" src="devices.svg"
-                            />
+                                className="w-5/6 mx-auto lg:mr-0 max-[425px]:w-full rounded-2xl"
+                            >
+                                <source src='/banner_video.mp4' type='video/mp4' />
+                            </motion.video>
                         </div>
                     </div>
                 </div>

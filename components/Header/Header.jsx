@@ -12,7 +12,7 @@ export default function Header() {
 
     return (
         <header className="fixed right-0 left-0 m-auto rounded-bl-3xl rounded-br-3xl max-w-full z-10 top-0 backdrop-blur-2xl shadow-lg ">
-            <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
@@ -23,7 +23,10 @@ export default function Header() {
                     }}
                     className="flex lg:flex-1">
                     <a href="#" className="-m-1.5 p-1.5">
-                        <img className="h-8 w-auto" src="/icon.png" alt="" />
+                        <img className="h-8 w-auto" style={{
+                            width: '200px',
+                            height: '45px'
+                        }} src="/logo.png" alt="" />
                         <span className="sr-only">Your Company</span>
                     </a>
                 </motion.div>
