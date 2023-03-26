@@ -1,6 +1,7 @@
 ﻿import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 import AnimatedTextCharacterParagraph from '../AnimatedText/AnimatedParagraph'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 const features = [
     {
@@ -36,7 +37,7 @@ export default function Features() {
                                     visible: { opacity: 1, scale: 1, x: 0 },
                                     hidden: { opacity: 0, scale: 0 },
                                 }}
-                                className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</motion.h2>
+                                className="text-base font-semibold leading-7 text-indigo-600">Features of App</motion.h2>
                             <h1
                                 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                                 A better workflow
@@ -66,6 +67,23 @@ export default function Features() {
                                 ))}
                             </dl>
                         </div>
+                    </div>
+                    <div className="sm:mb-8 sm:flex sm:justify-center">
+                        <motion.div
+                            initial="hidden"
+                            whileInView="visible"
+                            transition={{ duration: 0.7 }}
+                            variants={{
+                                visible: { opacity: 1, scale: 1, x: 0 },
+                                hidden: { opacity: 0, scale: 0 },
+                            }}
+                            className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                            Посмотреть функционал.{' '}
+                            <Link href="/mobile" className="font-semibold text-indigo-600">
+                                <span className="absolute inset-0" aria-hidden="true" />
+                                Смотреть <span aria-hidden="true">&rarr;</span>
+                            </Link>
+                        </motion.div>
                     </div>
                     <motion.img
                         initial="hidden"
