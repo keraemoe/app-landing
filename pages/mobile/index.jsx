@@ -1,5 +1,6 @@
 ﻿import Link from 'next/link';
-import React, { useState } from 'react';
+import { useState } from 'react'
+import { Button, Modal } from 'antd';
 
 const history = [
     {
@@ -35,10 +36,21 @@ const indeex = () => {
         setActiveTab(tab);
     };
 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const showModal = () => {
+        setIsModalOpen(true);
+    };
+    const handleOk = () => {
+        setIsModalOpen(false);
+    };
+    const handleCancel = () => {
+        setIsModalOpen(false);
+    };
+
     return (
         <>
             <div>
-                <header className="fixed right-0 left-0 m-auto rounded-bl-3xl rounded-br-3xl h-16 max-w-full z-10 top-0 backdrop-blur-2xl shadow-lg hidden max-[425px]:block ">
+                <header className="fixed right-0 left-0 m-auto rounded-bl-3xl rounded-br-3xl h-16 max-w-full z-10 top-0 backdrop-blur-2xl shadow-lg max-[425px]:px-6 ">
                     <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
                         <Link href="/" className="text-sm font-semibold leading-6 text-gray-900">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -65,7 +77,6 @@ const indeex = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
-
                         </button>
                         <button className='text-sm font-semibold leading-6 text-gray-900 ${activeTab === 4 ? "bg-gray-300" : "bg-white"}'
                             onClick={() => changeTab(4)}
@@ -78,17 +89,51 @@ const indeex = () => {
                 </header>
                 <div className="flex flex-col items-center">
                     <div className="w-full sm:w-2/3 lg:w-1/2">
-                        <div className="p-4 border-l border-r border-b mt-28">
+                        <div className="p-4 mt-28">
                             {activeTab === 1 && (
                                 <>
-                                    <h3 className="text-lg font-bold mb-2">Контент вкладки 1</h3>
-                                    <p>Это содержимое вкладки 1.</p>
+                                    <div className='flex flex-col justify-center items-center gap-6'>
+                                        <Link href='/profile'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-14 h-14">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            </svg>
+                                        </Link>
+                                        <button onClick={showModal} className="bg-blue-600 w-56 h-20 rounded-xl text-white">
+                                            <Link href=''>Услуги</Link>
+                                        </button>
+                                        <Modal title="Услуги" open={isModalOpen} onCancel={handleCancel}>
+                                            <p className="border rounded-xl p-4 mb-3">Отопление</p>
+                                            <p className="border rounded-xl p-4 mb-3">Газ</p>
+                                            <p className="border rounded-xl p-4 mb-3">Охрана</p>
+                                            <p className="border rounded-xl p-4 mb-3">Электричество</p>
+                                            <p className="border rounded-xl p-4 mb-3">Вода</p>
+                                            <p className="border rounded-xl p-4 mb-3">Уборка</p>
+                                            <p className="border rounded-xl p-4 mb-3">Лифт</p>
+                                            <p className="border rounded-xl p-4 mb-3">ТСЖ</p>
+                                        </Modal>
+                                        <button className="bg-blue-600 w-56 h-20 rounded-xl text-white">
+                                            <Link href=''>Благотворительность</Link>
+                                        </button>
+                                    </div>
                                 </>
                             )}
                             {activeTab === 2 && (
                                 <>
-                                    <h3 className="text-lg font-bold mb-2">Контент вкладки 2</h3>
-                                    <p>Это содержимое вкладки 2.</p>
+                                    <h1 className="text-3xl">Объекты</h1>
+                                    <div className='flex flex-col justify-center items-center gap-6 pt-10'>
+                                        <button className="bg-blue-600 w-64 h-20 rounded-xl text-white">
+                                            <Link href=''>Испагский дом</Link>
+                                        </button>
+                                        <button className="bg-blue-600 w-64 h-20 rounded-xl text-white">
+                                            <Link href=''>Монако</Link>
+                                        </button>
+                                        <button className="bg-blue-600 w-64 h-20 rounded-xl text-white">
+                                            <Link href=''>Елисейские поля</Link>
+                                        </button>
+                                        <button className="bg-blue-600 w-64 h-20 rounded-xl text-white">
+                                            <Link href=''>Французский квартал</Link>
+                                        </button>
+                                    </div>
                                 </>
                             )}
                             {activeTab === 3 && (
