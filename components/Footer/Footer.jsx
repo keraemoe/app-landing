@@ -42,10 +42,10 @@ const Footer = () => {
                     <div className="mt-28 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
                         <p className="order-2 md:order-1 mt-8 md:mt-0"> &copy; AvangardApp, 2025 </p>
                         <div className="order-1 md:order-2">
-                            <a href="#" className='px-2'>Home</a>
-                            <a href="#app" className='px-2 border-l'>The App</a>
-                            <a href="#features" className='px-2 border-l'>Features</a>
-                            <a href="#contact" className='px-2 border-l'>Contact</a>
+                            <a href="#" className='px-2'>Главная</a>
+                            <a href="#app" className='px-2 border-l'>Приложение</a>
+                            <a href="#features" className='px-2 border-l'>Функционал</a>
+                            <a href="#contact" className='px-2 border-l'>Cвязаться</a>
                         </div>
                     </div>
                 </div>

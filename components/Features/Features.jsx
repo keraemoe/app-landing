@@ -68,6 +68,7 @@ export default function Features() {
                             </dl>
                         </div>
                         <motion.div
+                            className="mt-6"
                             initial="hidden"
                             whileInView="visible"
                             transition={{ duration: 0.7 }}
