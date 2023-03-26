@@ -167,8 +167,7 @@ const indeex = () => {
                             )}
                             {activeTab === 4 && (
                                 <>
-                                    <h3 className="text-lg font-bold mb-2">Контент вкладки 4</h3>
-                                    <p>Это содержимое вкладки 4.</p>
+                                    <img src="/card4.jpg" alt="" />
                                 </>
                             )}
                         </div>
