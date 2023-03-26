@@ -119,7 +119,7 @@ const indeex = () => {
                             )}
                             {activeTab === 2 && (
                                 <>
-                                    <h1 className="text-3xl">Объекты</h1>
+                                    {/* <h1 className="text-3xl">Объекты</h1>
                                     <div className='flex flex-col justify-center items-center gap-6 pt-10'>
                                         <button className="bg-blue-600 w-64 h-20 rounded-xl text-white">
                                             <Link href=''>Испагский дом</Link>
@@ -133,7 +133,8 @@ const indeex = () => {
                                         <button className="bg-blue-600 w-64 h-20 rounded-xl text-white">
                                             <Link href=''>Французский квартал</Link>
                                         </button>
-                                    </div>
+                                    </div> */}
+                                    <img src="/objects.jpg" alt="" />
                                 </>
                             )}
                             {activeTab === 3 && (
