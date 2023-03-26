@@ -7,12 +7,12 @@ const Footer = () => {
         <>
             <div className=" bg-gray-900 rounded-tl-2xl rounded-tr-2xl">
                 <div className="max-w-2xl mx-auto text-white py-10">
-                    <div className="text-center">
-                        <h3 className="text-3xl mb-3">
-                            <AnimatedLast text={"Скачайте наше приложение "} />
+                    <div className="text-center ">
+                        <h3 className="flex flex-wrap justify-center text-3xl mb-3">
+                            Скачайте наше приложение
                         </h3>
-                        <h4>
-                            <AnimatedLast text={"Наше приложение - это удобный инструмент для управления рабочим процессом."} />
+                        <h4 className='flex flex-wrap justify-center'>
+                            Наше приложение - это удобный инструмент для управления рабочим процессом.
                         </h4>
                         <motion.div
                             initial="hidden"

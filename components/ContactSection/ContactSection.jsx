@@ -63,7 +63,7 @@ export default function ContactSection() {
                         }}
                     >
                         <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
-                            First name
+                            Имя
                         </label>
                         <div className="mt-2.5">
                             <input
@@ -85,7 +85,7 @@ export default function ContactSection() {
                         }}
                     >
                         <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
-                            Last name
+                            Фамилия
                         </label>
                         <div className="mt-2.5">
                             <input
@@ -107,7 +107,7 @@ export default function ContactSection() {
                         }}
                         className="sm:col-span-2">
                         <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
-                            Email
+                            Почта
                         </label>
                         <div className="mt-2.5">
                             <input
@@ -129,7 +129,7 @@ export default function ContactSection() {
                         }}
                         className="sm:col-span-2">
                         <label htmlFor="number" className="block text-sm font-semibold leading-6 text-gray-900">
-                            Phone Number
+                            Телефон
                         </label>
                         <div className="mt-2.5">
                             <input
@@ -152,7 +152,7 @@ export default function ContactSection() {
                         }}
                         className="sm:col-span-2">
                         <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
-                            Message
+                            Сообщение
                         </label>
                         <div className="mt-2.5">
                             <textarea
@@ -179,7 +179,7 @@ export default function ContactSection() {
                         value="Send"
                         className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
-                        Submit
+                        Отправить
                     </button>
                 </motion.div>
             </form>

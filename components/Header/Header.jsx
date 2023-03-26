@@ -42,16 +42,16 @@ export default function Header() {
                 </div>
                 <Popover.Group className="hidden lg:flex lg:gap-x-12">
                     <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                        <AnimatedTextCharacterParagraph text={"Home"} />
+                        <AnimatedTextCharacterParagraph text={"Главная"} />
                     </a>
                     <a href="#app" className="text-sm font-semibold leading-6 text-gray-900">
-                        <AnimatedTextCharacterParagraph text={"The App"} />
+                        <AnimatedTextCharacterParagraph text={"Приложение"} />
                     </a>
                     <a href="#features" className="text-sm font-semibold leading-6 text-gray-900">
-                        <AnimatedTextCharacterParagraph text={"Features"} />
+                        <AnimatedTextCharacterParagraph text={"Функционал"} />
                     </a>
                     <a href="#contact" className="text-sm font-semibold leading-6 text-gray-900">
-                        <AnimatedTextCharacterParagraph text={"Contact"} />
+                        <AnimatedTextCharacterParagraph text={"Связаться"} />
                     </a>
                 </Popover.Group>
             </nav>
