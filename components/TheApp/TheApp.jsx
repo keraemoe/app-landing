@@ -51,7 +51,7 @@ export default function TheApp() {
                                 href="#"
                                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
-                                Начать
+                                Скачать
                             </motion.a>
                             <motion.a
                                 initial="hidden"
@@ -61,7 +61,7 @@ export default function TheApp() {
                                     visible: { opacity: 1, scale: 1, x: 0 },
                                     hidden: { opacity: 0, scale: 0 },
                                 }}
-                                href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                                href="#features" className="text-sm font-semibold leading-6 text-gray-900">
                                 Подробно <span aria-hidden="true">→</span>
                             </motion.a>
                         </div>
