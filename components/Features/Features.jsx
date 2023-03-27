@@ -15,7 +15,7 @@ export default function Features() {
     return (
         <div id='features' className="overflow-hidden bg-white py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="flex flex-wrap mx-auto justify-between gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0  lg:grid-cols-2">
+                <div className="flex flex-wrap mx-auto justify-between gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0 max-[801px]:justify-center  lg:grid-cols-2">
                     <div className="lg:pr-8 lg:pt-4">
                         <div className="lg:max-w-lg">
                             <motion.h2

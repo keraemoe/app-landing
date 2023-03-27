@@ -103,16 +103,16 @@ export default function Header() {
                             <div className="-my-6 divide-y divide-gray-500/10">
                                 <div className="space-y-2 py-6">
                                     <a href="#" onClick={() => setMobileMenuOpen(false)} className="flex py-3 text-sm font-semibold leading-6 text-gray-900">
-                                        Home
+                                        Главная
                                     </a>
                                     <a href="#app" onClick={() => setMobileMenuOpen(false)} className="flex py-3 text-sm font-semibold leading-6 text-gray-900">
-                                        The App
+                                        Приложение
                                     </a>
                                     <a href="#features" onClick={() => setMobileMenuOpen(false)} className="flex py-3 text-sm font-semibold leading-6 text-gray-900">
-                                        Features
+                                        Функционал
                                     </a>
                                     <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="flex py-3 text-sm font-semibold leading-6 text-gray-900">
-                                        Contact
+                                        Связаться
                                     </a>
                                 </div>
                             </div>
