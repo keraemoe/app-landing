@@ -118,7 +118,7 @@ export default function Features() {
                                         }}
                                         onClick={() => changeTab(7)}
                                         className='inline font-semibold text-gray-900 ${activeTab === 3 ? "bg-gray-300" : "bg-white"}'>
-                                        <AnimatedTextCharacterParagraph text={'Прфиль'} />
+                                        <AnimatedTextCharacterParagraph text={'Профиль'} />
                                     </motion.button>{' '}
                                     <motion.button
                                         initial="hidden"
