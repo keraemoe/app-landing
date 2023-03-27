@@ -26,14 +26,14 @@ export default function Features() {
                                     visible: { opacity: 1, scale: 1, x: 0 },
                                     hidden: { opacity: 0, scale: 0 },
                                 }}
-                                className="text-base font-semibold leading-7 text-indigo-600">Features of App</motion.h2>
+                                className="text-base font-semibold leading-7 text-indigo-600">Проверьте функционал</motion.h2>
                             <h1
                                 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                                A better workflow
+                                Функционал приложения
                             </h1>
-                            <h4 className="mt-6 text-lg leading-8 text-gray-600">
+                            {/* <h4 className="mt-6 text-lg leading-8 text-gray-600">
                                 <AnimatedTextCharacterParagraph text={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,iste dolor cupiditate blanditiis ratione."} />
-                            </h4>
+                            </h4> */}
                             <dl className="mt-10 space-y-8 text-base leading-7 text-gray-600 ">
                                 <div className="flex flex-col pl-9 gap-6">
                                     <motion.button

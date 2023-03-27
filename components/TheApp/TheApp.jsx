@@ -34,11 +34,10 @@ export default function TheApp() {
                 <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
                     <div className="text-center">
                         <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                            <AnimatedTextCharacter text={"Data to enrich your online business"} />
+                            <AnimatedTextCharacter text={"Наше приложение."} />
                         </h1>
                         <h4 className="mt-6 text-lg leading-8 text-gray-600">
-
-                            <AnimatedTextCharacterParagraph text={"Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt ametfugiat veniam occaecat fugiat aliqua."} />
+                            <AnimatedTextCharacterParagraph text={"Наше приложение представляет собой инновационное решение, которое поможет оптимизировать процесс оплаты жилищно-коммунальных услуг. Наша цель - предоставить жильцам безопасную, удобную и эффективную платформу для внесения платы. Мы стремимся, предложить удобный интерфейс и обеспечить быструю и безошибочную обработку платежей. Наше приложение позволит жильцам получать доступ к истории своих платежей. Наше приложение - универсальное решение для всех вопросов, связанных с оплатой жилья. Оно обеспечит быстрый и удобный доступ к информации о счетах, уведомлениям об оплате, а также предоставит возможность быстро и безопасно оплачивать жилищно-коммунальные услуги. Мы уверены, что наше приложение станет незаменимым помощником для жильцов, которые стремятся сделать процесс оплаты жилищно-коммунальных услуг максимально простым, эффективным и удобным. Не откладывайте на потом, загрузите наше приложение прямо сейчас и начните пользоваться всеми его преимуществами!"} />
                         </h4>
                         <div className="mt-10 flex items-center justify-center gap-x-6">
                             <motion.a
@@ -52,7 +51,7 @@ export default function TheApp() {
                                 href="#"
                                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
-                                Get started
+                                Начать
                             </motion.a>
                             <motion.a
                                 initial="hidden"
@@ -63,7 +62,7 @@ export default function TheApp() {
                                     hidden: { opacity: 0, scale: 0 },
                                 }}
                                 href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                                Learn more <span aria-hidden="true">→</span>
+                                Подробно <span aria-hidden="true">→</span>
                             </motion.a>
                         </div>
                     </div>
